@@ -1,7 +1,7 @@
 ## ex01: 전통적인 DOM API 기반의 애플리케이션
 1. 프로젝트 생성
     ```bash
-    $ mkdie ex01
+    $ mkdir ex01
     $ cd ex01
     $ npm init -y
     $ npm i -D express
@@ -61,3 +61,4 @@ $ npm start
     - DOM API를 직접 자바스크립트 코드로 호출
     - 주로 DOM 조작에 특화된 jQuery와 같은 라이브러리를 활용환다.
     - 장점은 작성된 애플리케이션 코드의 전달이 쉽다.(작성된대로 js파일을 html에 링크)
+    

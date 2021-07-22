@@ -2,20 +2,16 @@
   "name": "ex02",
   "version": "1.0.0",
   "description": "",
-  "main": "dev-server.js",
-  "dependencies": {
-    "http": "0.0.1-security",
-    "path": "0.12.7"
-  },
   "type": "module",
-  "devDependencies": {
-    "express": "4.17.1"
-  },
+  "main": "index.js",
   "scripts": {
-    "start": "node dev-server",
+    "start": "node dev-server",  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.17.1"
+  }
 }

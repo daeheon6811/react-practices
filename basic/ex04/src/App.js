@@ -4,5 +4,4 @@ const App = function(){
     return app;
 }
 
-const o = {App : App};
-
+export { App };
