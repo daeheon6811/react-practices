@@ -10,16 +10,12 @@ $ npm i -D webpack webpack-cli express
 
 2. 빌드하기
 ```bash
-$ npx webpack ./src/index.js -o /public
+$ npx webpack
 ```
-./public/main.js 로 번들링 됨
-
+webpack.config.js 의 output 섹션에 정의된 ./public/bundle.js 로 번들링 됨
 
 3. test server 실행
-
 ```bash
-$ node dev-server.mjs
+$ node der-server.mjs
 ```
-ES6 모듈로 실행(확장자를 .mjs) 해야 함.
-
 
