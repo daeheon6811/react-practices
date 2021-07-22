@@ -1,10 +1,10 @@
-## webpack-practice: ex04
+## webpack-practice: ex06
 1. 프로젝트 생성
 ```bash
-$ mkdir ex04
-$ cd ex04
+$ mkdir ex06
+$ cd ex06
 $ npm init -y
-$ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader
+$ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader sass-loader node-sass image-loader
 ```
 2. 프로젝트 구조
     <pre>
@@ -13,12 +13,15 @@ $ npm i -D webpack webpack-cli webpack-dev-server css-loader style-loader
         |--- package-lock.json
         |--- node-modules
         |--- public
-        |       |--- index.html
-        |       |--- bundle.js
-        |--- src
         |       |--- assets
-        |       |       |--- Common.css
-        |       |       |--- App.css
+        |       |       |--- images
+        |       |               |--- logo.svg  [build 결과]  
+        |       |--- index.html
+        |       |--- bundle.js                 [build 결과]  
+        |--- src
+        |       |--- index.css
+        |       |--- App.scss
+        |       |--- logo.svg
         |       |--- index.js
         |       |--- App.js
         |--- webpack.config.js [webpack 설정 파일]
@@ -38,6 +41,16 @@ module.exports = {
         rules: [{
             test: /\.css$/i,
             use:['style-loader', 'css-loader']
+        }, {
+            test: /\.s[ac]ss/i,
+            use: ['style-loader', 'css-loader', 'sass-loader']
+        },{
+            test: /\.svg$/i,
+            loader: 'file-loader',
+            options: {
+                outputPath: '/assets/images',
+                name: '[name].[ext]'
+            }
         }]
     },    
     devServer: {
@@ -53,7 +66,7 @@ module.exports = {
 }
 ```
 
-4. 빌드하기
+4. 빌드하기(image 복사를 위해서 먼저 꼭 해야함)
 ```bash
 $ npx webpack    
 ```

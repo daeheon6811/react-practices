@@ -14,13 +14,6 @@
 ### Scheduler App [프로젝트 프로타입]
 
 
-
-
-
-
-
-
-
 ```javascript
 a.js
 export default function(){
