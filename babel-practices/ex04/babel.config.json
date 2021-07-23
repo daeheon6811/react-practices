@@ -1,0 +1,18 @@
+// 플러그인 설정한거 우선 순위로 매김
+{
+     "presets": [["@babel/preset-env" , {
+         "targets" : {
+             "ie" : "11",
+             "edge" : "89" ,
+             "firefox" : "92",
+             "chrome" : "90",
+              "opera" : "76" ,
+              "safari" : "15"
+
+   
+         }
+     }]
+    ]
+
+}
+
