@@ -19,11 +19,11 @@ module.exports = {
             ]
 
         }, {
-            test = /\.svg$/i,
+            test: /\.svg$/i,
             loader: 'file-loader',
             options: {
-                outputPath : '/assets/images',
-                name : '[name].[ext]'  
+                outputPath: '/assets/images',
+                name: '[name].[ext]'
             }
         }]
         

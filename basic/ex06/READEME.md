@@ -61,7 +61,10 @@ module.exports = {
 ```
 
 
-5. 빌드(번들링)
+
+
+
+1. 빌드(번들링)
 ```bash
 $ npm run build
 ```
