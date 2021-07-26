@@ -1,22 +1,21 @@
 const path = require('path');
 
 module.exports = {
+    
+   
     entry: path.resolve('src/index.js'),
     output : {
         path: path.resolve("public") ,
         filename: 'bundle.js'
     },
-    module: {
-   
-
-
+    module: { 
         rules:[{
             test: /\.js$/i,
             exclude: /node_modules/,
             loader: 'babel-loader'
         },{
             test :  /\.css$/i ,
-            use : ['style-loader' , 'css-loader']
+            use : ['style-loader' , {loader : 'css-loader' , options : {modules : true} }]
          }, {
             test: /\.svg$/i,
             loader: 'file-loader',
@@ -31,6 +30,7 @@ module.exports = {
 
     devServer: {
         contentBase: path.resolve('public') , 
+        watchContentBase:true,
         host: "0.0.0.0",
         port : 9999,
         inline : true,

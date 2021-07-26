@@ -15,6 +15,7 @@ module.exports = {
     },
     devServer: {
         contentBase: path.resolve('public'),
+        watchContentBase:true,
         host: "0.0.0.0",
         port: 9999,
         inline: true,
