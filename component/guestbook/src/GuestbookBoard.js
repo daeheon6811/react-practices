@@ -4,7 +4,7 @@ import GuestbookForm from './GuestbookForm'
 import item from './data.json';
 
 export default function GuestbookBoard(){
-:
+
     return (
 
         <div className={'Guestbook'}>
