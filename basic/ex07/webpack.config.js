@@ -14,16 +14,13 @@ module.exports = {
             exclude: /node_modules/,
             loader: 'babel-loader'
         },{
-            test :  /\.css$/i ,
-            use : ['style-loader' , {loader : 'css-loader' , options : {modules : true} }]
-         }, {
-            test: /\.svg$/i,
-            loader: 'file-loader',
-            options: {
-                outputPath: '/assets/images',
-                name: '[name].[ext]'
-            }
-        }
+            test :  /\.(sa|sc|c)ss$/i ,
+            use : ['style-loader', 'css-loader' , 'sass-loader',       ]
+         },{
+            test :  /\.(png|gif|jpg?g|svg|ico|tiff|bmp)$/i ,
+            type: 'asset/resource'
+         },
+        
         
         ]
     },

@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    node : "none",  
     entry: path.resolve('src/index.js'),
     output : {
         path: path.resolve("public") ,

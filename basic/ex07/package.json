@@ -3,10 +3,8 @@
   "version": "1.0.0",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "npx webpack serve --progress",
-    "build": "npx webpack",
-    "debug": "npx webpack serve --progress --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx webpack serve --mode production",
+    "debug": "npx webpack serve --mode development --progress"
   },
   "keywords": [],
   "author": "",
