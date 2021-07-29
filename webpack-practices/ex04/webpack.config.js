@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+    mode : 'development',
     entry: path.resolve('src/index.js'),
     output : {
         path: path.resolve("public") ,
@@ -9,20 +10,21 @@ module.exports = {
     module : {
         rules : [{
            test :  /\.css$/i ,
-           use : ['style-loader' , {loader : 'css-loader' , options : {module : true} }]
+           use : ['style-loader' ,  'css-loader'  ] 
         }] ,
 
     },
+    devtool: "eval-source-map",
     devServer: {
-        contentBase: path.resolve('public') , 
+        contentBase: path.resolve('public'),
+        watchContentBase: true,
         host: "0.0.0.0",
-        port : 9999,
-        inline : true,
-        liveReload : true,
-        hot : false , 
-        compress : true , 
-        historyApiFallback : true ,
-                
+        port: 9999,
+        inline: true,
+        liveReload: true,
+        hot: false,
+        compress: true,
+        historyApiFallback: true
     }
 
 }

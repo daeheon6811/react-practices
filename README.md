@@ -14,6 +14,11 @@
 ### Scheduler App [프로젝트 프로타입]
 
 
+- webpack-practices ex06 까지 webpack05 버전 적용
+
+
+
+
 ```javascript
 a.js
 export default function(){
