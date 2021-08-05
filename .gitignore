@@ -1,1 +1,6 @@
 /component/guestbook/assets/css/assets/css
+**/node_modules
+
+**/.idea
+**/.iml
+**/build/
