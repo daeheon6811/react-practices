@@ -9,7 +9,7 @@ export default function App() {
 
     return (
         <Fragment>
-            <h2>ex05: Component LifeCycle</h2>
+            <h2>ex05: Hook of Function Component LifeCycle</h2>
             <button onClick={handleClick}>색상변경</button>
             <br/> {<LifeCycle color={color}/>}
         </Fragment>

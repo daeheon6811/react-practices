@@ -11,3 +11,12 @@
 
 3.  Unmount Lifecycle
 4.  예제:  src/01
+
+## Function Component LifeCycle
+
+1. Alternative1 : getDerivedStateFromProps
+2. After Rendering 함수
+3. 어떤 특정 값의 변화에 반응하는 After Rendering 함수 (어떤 특정 상태 값이 변화 -> 렌더링)
+4. Alternative 2 : componentDidMount
+5. Alternative 3 : componentDidUpdate
+6. Alternative 4 : componentWillUnmount
