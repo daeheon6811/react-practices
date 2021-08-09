@@ -3,43 +3,41 @@
 ## Configuration
 1. Application(Project) Structure
    <pre>
-    ```text
-    /app
-      |--- /backend
-      |        |--- index.js
-      |        |--- /public
-      |        |       |--- /assets         [frontend build한 assets]
-      |        |--- /logging
-      |        |       |--- index.js
-      |        |--- /routes
-      |        |       |--- index.js
-      |        |       |--- authorized.js
-      |        |       |--- error.js
-      |        |--- /controllers
-      |        |--- /models
-      |        |--- /views
-      |        |       |--- /error
-      |        |               |--- [404.ejs]
-      |        |               |--- [500.ejs]
-      |        |--- app.config.env
-      |--- /frontend
-      |        |--- /src
-      |        |--- /assets
-      |        |--- /config
-      |        |       |--- babel.config.json
-      |        |       |--- webpack.config.json
-      |        |--- /public
-      |        |       |--- favicon.ico
-      |        |       |--- index.html
-      |--- /node_modules
-      |--- package.json
-      |--- package-lock.json
-    ```
+   /app
+    |--- /backend
+    |       |--- /logging
+    |       |       |--- index.js
+    |       |--- /routes
+    |       |       |--- [index.js]
+    |       |       |--- authorized.js
+    |       |       |--- error.js
+    |       |--- /controllers
+    |       |--- /models
+    |       |--- /views
+    |       |       |--- /error
+    |       |               |--- [404.ejs]
+    |       |               |--- [500.ejs]
+    |       |--- /public
+    |       |--- [index.js]
+    |       |--- [app.config.env]    
+    |--- /frontend
+    |       |--- /config
+    |       |       |--- babel.config.json
+    |       |       |--- [webpack.config.json]
+    |       |--- /public
+    |       |       |--- favicon.ico
+    |       |       |--- index.html
+    |       |--- /src
+    |       |--- /assets
+    |--- /node_modules
+    |--- package.json
+    |--- package-lock.json
    </pre>
 2. nodemon
 3. webpack dev server
 4. package.json
-5. node application
+5. concurrently
+6. node application
 
 ## Application
 1. app01.emaillist
@@ -53,3 +51,7 @@
 4. app04.gallery
 5. app05.mysite
 ---
+
+
+
+

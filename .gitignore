@@ -1,8 +1,5 @@
-/component/guestbook/assets/css/assets/css
 **/node_modules
+**/public/assets
+**/public/bundle.js
+**/public/main.js
 
-**/.idea
-**/.iml
-**/build/
-/07.integration/app01.emaillist
-/07.integration/app01.emaillist/backend

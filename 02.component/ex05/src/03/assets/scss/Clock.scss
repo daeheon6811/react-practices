@@ -1,6 +1,5 @@
 @media (max-width: 768px) {
   :global(.clock-display) { padding: 15px 30px; }
-  :global(.desktop-view)  { display: none; }
 }
 
 @media (max-width: 550px) {
@@ -60,14 +59,6 @@
         top: 0;
         z-index: 50;
       }
-
-      :global(.type) {
-        font-size: 10px;
-        font-weight: bold;
-        font-family: sans-serif;
-        text-transform: uppercase;
-        margin-top: -10px;
-      }
     }
 
     :global(.AmPm) {
@@ -75,28 +66,22 @@
       text-transform: uppercase;
       width: 20px;
 
-
-      :global(.am), :global(.pm) {
-        color: #2b2828;
-      }
-
       div {
         position: relative;
         top: 50%;
 
         p {
+          color: #2b2828;
           font-size: 12px;
           font-weight: bold;
           width: 100%;
         }
       }
 
-      
       :global(.on) {
         color: #ffffff !important;
       }
 
-      
       :global(.off) {
         color: #2b2828 !important;
       }
