@@ -1,0 +1,12 @@
+{
+  "name": "07.integration",
+  "version": "1.0.0",
+  "description": "1. Application(Project) Structure\r    <pre>\r    /app\r    |--- /backend\r    |--- /frontend\r    |--- /node_modules\r    |--- package.json\r    |--- package-lock.json\r    </pre>\r 2. nodemon\r 3. webpack dev server\r 4. package.json\r 5. node application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

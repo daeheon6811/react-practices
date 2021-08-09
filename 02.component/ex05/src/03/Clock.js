@@ -12,25 +12,18 @@ export default class Clock extends Component {
              hours: '00',
              minutes: '00',
              seconds: '00',
-             session: 'am',                         
-        }   
+             session: 'am',
+        }
 
         this.count = 0 ;
     }
 
 
-
-
     componentDidMount() {
       this.interval = setInterval(() => {
-
-   
-        
-
-        if(++this.count == 5){
+        if(++this.count === 5){
             this.props.callback();
         }
-         
         const date = new Date();
         const hours = date.getHours();
         const minutes = date.getMinutes();
@@ -44,15 +37,15 @@ export default class Clock extends Component {
         }) }, 1000);
     }
 
- 
+
       componentWillUnMount() {
 
         console.log('click')
         clearInterval(this.interval)
       }
-      
 
- 
+
+
 
     render() {
         return (
@@ -60,7 +53,7 @@ export default class Clock extends Component {
                 <div className="numbers">
                     <p className="hours">{this.state.hours}</p>
                     <p className="placeholder"></p>
-            
+
                 </div>
                 <div className="colon">
                     <p>:</p>
@@ -68,7 +61,7 @@ export default class Clock extends Component {
                 <div className="numbers">
                     <p className="minutes">{this.state.minutes}</p>
                     <p className="placeholder"></p>
-     
+
                 </div>
                 <div className="colon">
                     <p>:</p>
@@ -76,7 +69,7 @@ export default class Clock extends Component {
                 <div className="numbers">
                     <p className="seconds">{this.state.seconds}</p>
                     <p className="placeholder"></p>
-          
+
                 </div>
                 <div className="AmPm">
                     <div>

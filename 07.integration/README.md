@@ -1,19 +1,55 @@
-## React Pracractices - Component
+## React Pracractices - Integration(개발 환경 통합)
 
-### ex01: Property: Component 작성 (Data Flow: Top->Down) - Kanban Board #1
-### ex02: Component Styling                               - Kanban Board #2
-### ex03: React Event                                     - kanban Board #3
-### ex04: State                                           - Kanban Board #4
-### ex05: Component Lifecycle
-### AJAX(fetch , axios)
+## Configuration
+1. Application(Project) Structure
+   <pre>
+    ```text
+    /app
+      |--- /backend
+      |        |--- index.js
+      |        |--- /public
+      |        |       |--- /assets         [frontend build한 assets]
+      |        |--- /logging
+      |        |       |--- index.js
+      |        |--- /routes
+      |        |       |--- index.js
+      |        |       |--- authorized.js
+      |        |       |--- error.js
+      |        |--- /controllers
+      |        |--- /models
+      |        |--- /views
+      |        |       |--- /error
+      |        |               |--- [404.ejs]
+      |        |               |--- [500.ejs]
+      |        |--- app.config.env
+      |--- /frontend
+      |        |--- /src
+      |        |--- /assets
+      |        |--- /config
+      |        |       |--- babel.config.json
+      |        |       |--- webpack.config.json
+      |        |--- /public
+      |        |       |--- favicon.ico
+      |        |       |--- index.html
+      |--- /node_modules
+      |--- package.json
+      |--- package-lock.json
+    ```
+   </pre>
+2. nodemon
+3. webpack dev server
+4. package.json
+5. node application
 
-1. App01.Emailist(node + react) : React(Frontend) Integration with Node(Backend)
-2. App02.Guestbook(node + react) : React(Frontend) Integration with Node(Backend)
-3. App03.Gallery(node + react) :  React(Frontend) Integration with Node(Backend)
-4. mysite(App02 + App03)  :  React(Frontend) Integration with Node(Backend)
+## Application
+1. app01.emaillist
+   - 개발 통합 설정(with Node Backend)
+   - backend: Fully APIs(Node Exporess기반)
+   - Frontend: React(SPA)
+   - AJAX: fetch 기반
 
-### Guestbook SPA [과제]
-### Gallery SPA [과제]
-
-
-
+2. app02.kanban
+3. app03.guestbook
+4. app04.gallery
+5. app05.mysite
+---
