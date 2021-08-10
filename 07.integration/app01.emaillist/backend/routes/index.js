@@ -1,4 +1,4 @@
-const errorRouter = require('./error');
+onst errorRouter = require('./error');
 const authorized = require('./authorized');
 
 const applicationRouter = {
