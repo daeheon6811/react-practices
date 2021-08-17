@@ -1,7 +1,6 @@
 (function() {
     const express = require('express');
     const session = require('express-session');
-    const multer = require('multer');
     const http = require('http');
     const path = require('path');
     const dotenv = require('dotenv');
@@ -32,11 +31,9 @@
         // 6-2. Body Parsers
         .use(express.json())
         .use(express.urlencoded({extended: true}))
-        // 6-3. Multipart
-        .use(multer({dest: path.join(__dirname, process.env.MULTER_TEMPORARY_STORE)}).single('file'))
-        // 6-4. Static
+        // 6-3. Static
         .use(express.static(path.join(__dirname, process.env.STATIC_RESOURCES_DIRECTORY)))
-        // 6-5. View Engine Setup
+        // 6-4. View Engine Setup
         .set('views', path.join(__dirname, 'views'))
         .set('view engine', 'ejs');
 

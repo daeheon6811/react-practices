@@ -3,7 +3,7 @@ const path = require('path');
 const models = require('../models');
 
 module.exports = {
-    readAll: async function(req, res, next) {
+    read: async function(req, res, next) {
         try {
             const results = await models.Gallery.findAll({
                 attributes: ['no', 'url', 'comment'],
@@ -61,12 +61,13 @@ module.exports = {
                 comment: req.body.comment || ''
             });
 
-            res.send({
-                result: 'success',
-                data: result,
-                message: null
-            });
-
+            res
+                .status(200)
+                .send({
+                    result: 'success',
+                    data: result,
+                    message: null
+                });
         } catch (err) {
             next(err);
         }       
