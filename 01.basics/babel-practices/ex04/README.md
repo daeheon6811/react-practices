@@ -32,7 +32,7 @@
 
     -   변환
         ```bash
-        $ npx babel src/ex01.js -o dist/ex01.01.js
+        $ npx babel src/ex01.js -o dist/ex01.ex01.js
         ```
 
 2.  플러그인 설정[babel.config.02.json]

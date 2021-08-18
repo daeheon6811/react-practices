@@ -3,10 +3,10 @@ import {Link, NavLink} from 'react-router-dom';
 
 export default function Guestbook(){
     const selectedStyle = {
-        backgroundColor: 'blue',
+        backgroundColor: 'green',
         color: 'white'
     };
-        
+
     return (
         <div>
             <h1>Guestbook</h1>

@@ -6,15 +6,15 @@ export default function Hook({ color }) {
     const h3Ref = useRef(null);
 
     /**
-     *   1. Alternative 01: getDerivedStateFromProps
+     *   1. Alternative ex01: getDerivedStateFromProps
      */
     if(boxColor !== color ) {
         setBoxColor(color);
     }
-    
+
     /**
      *   2. After Rendering 함수( 상태에 변화 -> 렌더링 -> 함수)
-     *   class component lifecycle(componentDidMount, componentDidUpdate) 
+     *   class component lifecycle(componentDidMount, componentDidUpdate)
      */
     useEffect(() => {
         console.log('After Rendering');
@@ -34,7 +34,7 @@ export default function Hook({ color }) {
      useEffect(() => {
         console.log('After Mount(componentDidMount)');
 
-        
+
         return (function(){
             console.log('After Unmount(componentWillUnmount)');
         });

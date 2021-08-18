@@ -11,8 +11,8 @@
 
     ```bash
     $ npm i -D @babel/plugin-transform-block-scoping
-    $ npx babel src/ex01.js -o dist/ex01.01.js --plugins @babel/plugin-transform-block-scoping
-    $ cat dist/ex01.01.js
+    $ npx babel src/ex01.js -o dist/ex01.ex01.js --plugins @babel/plugin-transform-block-scoping
+    $ cat dist/ex01.ex01.js
     ```
 
 2.  객체분해-파라미터 변환(@babel/plugin-transform-parameters)

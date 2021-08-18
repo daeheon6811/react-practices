@@ -3,10 +3,10 @@ import {Link, NavLink} from 'react-router-dom';
 
 export default function Gallery(){
     const selectedStyle = {
-        backgroundColor: 'blue',
+        backgroundColor: 'red',
         color: 'white'
     };
-        
+
     return (
         <div>
             <h1>Gallery</h1>
